@@ -1,0 +1,54 @@
+/* Calendrier */
+.simcal-calendar-grid th {
+	border: 0;
+}
+
+.simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day:hover {
+	background: #f6f6f6;
+}
+
+.simcal-calendar-grid th.simcal-week-day {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.simcal-current-month {
+	text-transform: uppercase;
+}
+
+.simcal-default-calendar-grid.simcal-default-calendar-light .simcal-day-number {
+	background: none;
+}
+
+.simcal-default-calendar-grid .simcal-day-number {
+	display: inline-block;
+	padding: 4px;
+	height: 1.2em;
+	line-height: 1.2em;
+	width: 1.2em;
+	text-align: center;
+	border-radius: 50%
+}
+
+.simcal-default-calendar-grid .simcal-day > div {
+	border: 0 !important;
+	padding: 0.2em 0 1em;
+}
+
+.simcal-event {
+	margin-top: 0.5em !important;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 4px;
+	font-size: 0.9em;
+	padding: 6px !important;
+	background: #000;
+}
+
+/* .simcal-event.simcal-events-calendar-18 {
+	background: #CA6680;
+}
+.simcal-event.simcal-events-calendar-71 {
+	background: #D57A66;
+} */

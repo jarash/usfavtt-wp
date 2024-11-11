@@ -1,0 +1,186 @@
+/*
+ Theme Name:   Xmag USFAV
+ Description:  Sous-thème pour xMag pour l'USFAV TT
+ Author:       Vincent Rousseau
+ Template:     xmag
+ Version:      1.0.0
+*/
+
+@import url("../xmag/style.css");
+
+.page-template-no-sidebar .hentry, .page-template-no-sidebar .comments-area, .page-template-no-sidebar .breadcrumb {
+	max-width: 1080px;
+}
+
+/* Joueurs */
+body.single-joueur .content-area {
+	width: 100%;
+}
+body.single-joueur .site-content {
+	margin-top: 0;
+}
+
+.post-player {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+.post-player > section {
+	width:50%;
+}
+
+.post-player .entry-thumbnail {
+	max-width: 100%;
+	margin: 0;
+}
+
+.post-player .entry-header {
+	padding-top: 2em;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+.post-player .entry-header .points {
+	color: #ffdc00;
+	display: block;
+	font-size: 100px;
+	line-height: 0.9em;
+	font-weight: 900;
+	margin: 0 30px 30px 0;
+}
+
+.post-player .entry-header .infos {
+	color: #85b5de;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.post-player h1 {
+	font-size: 44px;
+	margin: 0;
+	width: 65%;
+	line-height: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #1E73BE;
+}
+.post-player h1 span {
+	display: block;
+}
+
+.post-player .icons-player {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.post-player .icon-player {
+	margin: 1em 0;
+	width: 33%;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.post-player .icon-player i {
+	font-size: 50px;
+	color: #85b5de;
+}
+
+.post-player .icon-player {
+	line-height: 1em;
+}
+
+.post-player .icon-player .info label {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	display: block;
+}
+.post-player .icon-player .info span {
+	color: #1E73BE;
+}
+.post-player .icon-player a {
+	color: #1E73BE;
+}
+
+/* Page des progressions */
+#ranking, #ranking td, #ranking th {
+	text-align: left;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+#ranking th {
+	background-color: #85b5de;
+}
+
+#ranking tr:nth-child(even) td {
+	background-color: #eff8ff;
+}
+
+#ranking .rank {
+	width: 20px;
+	text-align: center;
+}
+
+#ranking .emoji {
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+}
+#ranking a {
+	color: #1E73BE;
+}
+
+/* Liste des joueurs */
+#primary.primary-players {
+	width: 100%;
+}
+
+#players-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#players-list .player-item {
+	width:25%;
+	display: block;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+#players-list .player-item img {
+	display: block;
+	border: 1px solid #1E73BE;
+}
+
+#players-list .player-item h2 {
+	margin: 0.2em 0;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#players-list .player-item a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+	#players-list .player-item {
+		width:50%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#players-list .player-item h2 {
+		font-size: 1em;
+	}
+}
